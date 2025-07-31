@@ -50,3 +50,80 @@ A modern and responsive e-commerce frontend website built with **React**, **Vite
    ```bash
    git clone https://github.com/your-username/ecommerce-frontend.git
    cd ecommerce-frontend
+
+
+   Install dependencies:
+   
+npm install
+
+Set up Firebase:
+
+Create a Firebase project at firebase.google.com
+
+Enable Email/Password Authentication
+
+Create a file src/firebase.js and add your config:
+
+
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+
+const firebaseConfig = {
+  apiKey: "YOUR_KEY",
+  authDomain: "YOUR_DOMAIN",
+  projectId: "YOUR_ID",
+  appId: "YOUR_APP_ID",
+};
+
+const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
+Run the project:
+
+npm run dev
+
+📁 Project Structure
+
+src/
+├── components/
+│   ├── ProductCard.jsx
+│   ├── Toast.jsx
+│   └── ...
+├── context/
+│   ├── auth/
+│   ├── cart/
+│   └── toast/
+├── pages/
+│   ├── Home.jsx
+│   ├── Cart.jsx
+│   ├── Login.jsx
+│   ├── Register.jsx
+│   ├── Checkout.jsx
+│   └── Orders.jsx
+├── App.jsx
+├── main.jsx
+└── index.css
+
+
+💡 Future Improvements
+🧠 Product sorting (price, rating)
+
+💳 Stripe integration for real payments
+
+🌍 i18n / multi-language support
+
+👤 User profile page
+
+🌐 Admin dashboard (Next.js or separate app)
+
+
+👨‍💻 Author
+Desta Shewa
+
+📧 destashewa67@gmail.com
+
+💼 Upwork Profile
+
+🌐 Portfolio Website
+
+⭐ Star This Project
+If you found this project helpful, consider giving it a ⭐ on GitHub!
