@@ -83,25 +83,42 @@ npm run dev
 
 📁 Project Structure
 
-src/
- ├── components/
- │   ├── ProductCard.jsx
- │   ├── Toast.jsx
- │   └── ...
- ├── context/
- │   ├── auth/
- │   ├── cart/
- │   └── toast/
- ├── pages/
- │   ├── Home.jsx
- │   ├── Cart.jsx
- │   ├── Login.jsx
- │   ├── Register.jsx
- │   ├── Checkout.jsx
- │   └── Orders.jsx
- ├── App.jsx
- ├── main.jsx
- └── index.css
+📦 ecommerce-frontend/
+├── public/
+│   └── screenshot.png              # Project screenshot for README
+├── src/
+│   ├── components/                 # Reusable UI components
+│   │   ├── ProductCard.jsx
+│   │   ├── Toast.jsx
+│   │   └── ProtectedRoute.jsx
+│   ├── context/                    # App-wide contexts (Auth, Cart, Toast)
+│   │   ├── auth/
+│   │   │   ├── AuthContext.js
+│   │   │   └── AuthProvider.jsx
+│   │   ├── cart/
+│   │   │   ├── CartContext.js
+│   │   │   └── CartProvider.jsx
+│   │   └── toast/
+│   │       ├── ToastContext.js
+│   │       └── ToastProvider.jsx
+│   ├── pages/                      # Main route pages
+│   │   ├── Home.jsx
+│   │   ├── Cart.jsx
+│   │   ├── Checkout.jsx
+│   │   ├── Orders.jsx
+│   │   ├── Login.jsx
+│   │   └── Register.jsx
+│   ├── firebase.js                 # Firebase configuration
+│   ├── App.jsx                     # Main layout & routing
+│   ├── main.jsx                    # App entry point
+│   └── index.css                   # Tailwind base styles
+├── .gitignore
+├── index.html
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+└── README.md
+
 
 
 💡 Future Improvements
