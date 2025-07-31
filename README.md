@@ -84,24 +84,24 @@ npm run dev
 📁 Project Structure
 
 src/
-├── components/
-│   ├── ProductCard.jsx
-│   ├── Toast.jsx
-│   └── ...
-├── context/
-│   ├── auth/
-│   ├── cart/
-│   └── toast/
-├── pages/
-│   ├── Home.jsx
-│   ├── Cart.jsx
-│   ├── Login.jsx
-│   ├── Register.jsx
-│   ├── Checkout.jsx
-│   └── Orders.jsx
-├── App.jsx
-├── main.jsx
-└── index.css
+ ├── components/
+ │   ├── ProductCard.jsx
+ │   ├── Toast.jsx
+ │   └── ...
+ ├── context/
+ │   ├── auth/
+ │   ├── cart/
+ │   └── toast/
+ ├── pages/
+ │   ├── Home.jsx
+ │   ├── Cart.jsx
+ │   ├── Login.jsx
+ │   ├── Register.jsx
+ │   ├── Checkout.jsx
+ │   └── Orders.jsx
+ ├── App.jsx
+ ├── main.jsx
+ └── index.css
 
 
 💡 Future Improvements
