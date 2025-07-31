@@ -112,7 +112,8 @@ src/
 
 🌍 i18n / multi-language support
 
-👤 User profile page
+👤 User profile pages
+
 
 🌐 Admin dashboard (Next.js or separate app)
 
